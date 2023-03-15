@@ -31,7 +31,7 @@ class Brats3dRnetTrainer:
         if self.config.trainer.loss == "cross_entropy":
             self.loss_fn = torch.nn.CrossEntropyLoss()
         else:
-            raise ValueError(f"Loss {config.trainer.loss} is not supported")
+            raise ValueError(f"Loss {self.config.trainer.loss} is not supported")
 
     def set_optimizer(self):
         if self.config.trainer.optimizer == "sgd":
