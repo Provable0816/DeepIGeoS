@@ -24,7 +24,7 @@ class Brats3dSimplenetTrainer:
         self.set_optimizer()
         self.set_lr_scheduler()
         self.init_checkpoint()
-        self.load_best_pnet()
+        # self.load_best_pnet()
         self.best_loss = np.inf
         self.norm_transform = tio.ZNormalization(masking_method=lambda x: x > 0)
 
