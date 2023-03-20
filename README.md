@@ -24,6 +24,7 @@ Please check environments and requirements before you start. If required, we rec
 dotmap
 GeodisTK
 opencv-python
+# 测试UI时可以使用opencv-python-headless
 tensorboard
 torch
 torchio
